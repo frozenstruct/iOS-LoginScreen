@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="AVSoftTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginScreen2" translatesAutoresizingMaskIntoConstraints="NO" id="QAv-uQ-2Oc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fV6-wa-c2H">
+                                <rect key="frame" x="82" y="321" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.17245018818009067" green="0.60271537303924561" blue="0.60271537303924561" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7ns-TV-9uB"/>
+                                    <constraint firstAttribute="width" constant="250" id="8ge-vx-TRH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ug-CO-3SY">
+                                <rect key="frame" x="259" y="450" width="73" height="40"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.17254901959999999" green="0.602715373" blue="0.602715373" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ac-Mg-sgK"/>
+                                    <action selector="signUpButton:" destination="CtI-EG-RIy" eventType="touchUpInside" id="WRq-7T-crm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p86-E5-40U">
+                                <rect key="frame" x="126.66666666666669" y="498" width="161" height="40"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Forgot Password?">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="forgotPasswordButton:" destination="CtI-EG-RIy" eventType="touchUpInside" id="YxP-JP-nXL"/>
+                                    <action selector="forgotPasswordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hFN-Bg-LAM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PR-6X-3JN">
+                                <rect key="frame" x="82" y="450" width="63" height="40"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="0.17254901959999999" green="0.602715373" blue="0.602715373" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Tg-N8-GBK"/>
+                                    <action selector="signInButton:" destination="CtI-EG-RIy" eventType="touchUpInside" id="TeB-yw-UKu"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8gv-Y5-IHa">
+                                <rect key="frame" x="82" y="379" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.60271537303924561" blue="0.60271537303924561" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vkT-nf-B6p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ult-fr-KTI">
+                                <rect key="frame" x="132" y="580" width="150" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="JsS-u8-axh"/>
+                                </constraints>
+                                <color key="progressTintColor" red="0.17254901959999999" green="0.602715373" blue="0.602715373" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RC4-Gb-L0D">
+                                <rect key="frame" x="376" y="44" width="18" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="e9D-uN-0Gi"/>
+                                    <constraint firstAttribute="height" constant="22" id="qyf-Q1-kSE"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="arrow.clockwise" catalog="system"/>
+                                <connections>
+                                    <action selector="rollBackToInitialState:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKj-lN-7i4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip: to sign up as a new user simply put an e-mail and password to related fields and press 'Sign Up' button." textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWE-wW-xrf">
+                                <rect key="frame" x="142" y="628" width="252" height="39.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="252" id="9DH-3L-rEj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8gv-Y5-IHa" firstAttribute="top" secondItem="fV6-wa-c2H" secondAttribute="bottom" constant="8" id="0M1-k1-Sds"/>
+                            <constraint firstItem="8gv-Y5-IHa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="46J-b2-sEu"/>
+                            <constraint firstItem="8gv-Y5-IHa" firstAttribute="width" secondItem="fV6-wa-c2H" secondAttribute="width" id="50G-c4-bTY"/>
+                            <constraint firstItem="8ug-CO-3SY" firstAttribute="top" secondItem="8gv-Y5-IHa" secondAttribute="bottom" constant="21" id="EM8-el-S5L"/>
+                            <constraint firstItem="Ult-fr-KTI" firstAttribute="top" secondItem="p86-E5-40U" secondAttribute="bottom" constant="42" id="LXV-Wd-SuN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nWE-wW-xrf" secondAttribute="trailing" constant="20" id="PMX-a7-Jsl"/>
+                            <constraint firstItem="p86-E5-40U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cX6-3p-DJk"/>
+                            <constraint firstItem="Ult-fr-KTI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cr5-yk-ahv"/>
+                            <constraint firstItem="RC4-Gb-L0D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dsb-Ta-oy4"/>
+                            <constraint firstItem="5PR-6X-3JN" firstAttribute="top" secondItem="8gv-Y5-IHa" secondAttribute="bottom" constant="21" id="hmU-UO-k4Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8ug-CO-3SY" secondAttribute="trailing" constant="82" id="iZo-QU-nO4"/>
+                            <constraint firstItem="fV6-wa-c2H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l8Y-qc-9kM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RC4-Gb-L0D" secondAttribute="trailing" constant="20" id="lyi-cJ-R8u"/>
+                            <constraint firstItem="p86-E5-40U" firstAttribute="top" secondItem="8ug-CO-3SY" secondAttribute="bottom" constant="8" id="mTn-RY-KSo"/>
+                            <constraint firstItem="fV6-wa-c2H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="277" id="ql1-py-frX"/>
+                            <constraint firstItem="5PR-6X-3JN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="sgr-wW-zBh"/>
+                            <constraint firstItem="nWE-wW-xrf" firstAttribute="top" secondItem="Ult-fr-KTI" secondAttribute="bottom" constant="46" id="vK2-Rp-FqU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="eMailTextField" destination="fV6-wa-c2H" id="moN-c6-m7z"/>
+                        <outlet property="forgotPasswordButtonOutlet" destination="p86-E5-40U" id="sh0-p8-yJo"/>
+                        <outlet property="passwordTextField" destination="8gv-Y5-IHa" id="EWc-7o-wiC"/>
+                        <outlet property="progressViewOutlet" destination="Ult-fr-KTI" id="CX3-Tw-HxT"/>
+                        <outlet property="refreshButtonOutlet" destination="RC4-Gb-L0D" id="xsu-ZJ-sER"/>
+                        <outlet property="signInButtonOutlet" destination="5PR-6X-3JN" id="B0O-yn-BcO"/>
+                        <outlet property="signUpButtonOutlet" destination="8ug-CO-3SY" id="GFA-4z-F5Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="CtI-EG-RIy" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.clockwise" catalog="system" width="56" height="64"/>
+        <image name="loginScreen2" width="4000" height="6000"/>
+    </resources>
+</document>
